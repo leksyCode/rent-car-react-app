@@ -1,0 +1,19 @@
+{
+  "vehicles": [
+    {
+      "id": "728a7c47-7cdc-4c6f-a1e1-6e142de883bc",
+      "brand": "Lamborghini",
+      "model": "Urus"
+    },
+    {
+      "id": "ab39af94-2b7a-4f90-81ae-3d0d10da87ce",
+      "brand": "BMW",
+      "model": "5 series 530i"
+    },
+    {
+      "id": "f9797a98-0c62-47ce-8b79-ab60dc337f8e",
+      "brand": "WW",
+      "model": "Passat 2006 year"
+    }
+  ]
+}
