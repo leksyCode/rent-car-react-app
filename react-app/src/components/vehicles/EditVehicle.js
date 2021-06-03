@@ -19,8 +19,9 @@ class EditContact extends React.Component {
     }
     this.props.updateVehicleHandler(this.state);
     this.setState({ brand: "", model: "" });
-    this.props.history.push("/");
+    this.props.history.push("/vehicles");
   };
+  
   render() {
     return (
       <div className="ui main">
