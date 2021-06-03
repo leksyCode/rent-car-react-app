@@ -14,6 +14,23 @@
       "id": "f9797a98-0c62-47ce-8b79-ab60dc337f8e",
       "brand": "WW",
       "model": "Passat 2006 year"
+    },
+    {
+      "id": "c2f74d52-8c5c-4dab-ba42-537bb643730f",
+      "brand": "Audi ",
+      "model": "QS"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "00000000-7cdc-4b6f-a2e1-6e142de883bc",
+      "name": "AdminAdmin",
+      "email": "admin@good.com"
+    },
+    {
+      "id": "b36dcf06-55a1-4129-a3eb-992b45b6a9f5",
+      "name": "Boss23",
+      "email": "boss@gmail.com"
     }
   ]
 }

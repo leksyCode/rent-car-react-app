@@ -6,7 +6,7 @@ const VehicleList = (props) => {
   console.log(props);
 
   const deleteVehicleHandler = (id) => {
-    props.getContactId(id);
+    props.getVehicleId(id);
   };
 
   const renderVehicleList = props.vehicles.map((vehicle) => {
@@ -18,14 +18,16 @@ const VehicleList = (props) => {
       />
     );
   });
+
   return (
     <div className="main">
       <h2>
-        Vehicles List
-        <Link to="/add">
+        Сars
+        <Link to="/vehicles/add">
           <button className="ui button blue right">Add Vehicle</button>
         </Link>
       </h2>
+      <h5> Left in stock: {props.vehicles.length}</h5>
       <div className="ui celled list">{renderVehicleList}</div>
     </div>
   );

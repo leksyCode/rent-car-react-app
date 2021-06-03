@@ -9,12 +9,12 @@ class AddVehicle extends React.Component {
   add = (e) => {
     e.preventDefault();
     if (this.state.brand === "" || this.state.model === "") {
-      alert("ALl the fields are mandatory!");
+      alert("All the fields are mandatory!");
       return;
     }
     this.props.addVehicleHandler(this.state);
     this.setState({ brand: "", model: "" });
-    this.props.history.push("/");
+    this.props.history.push("/vehicles");
   };
   render() {
     return (

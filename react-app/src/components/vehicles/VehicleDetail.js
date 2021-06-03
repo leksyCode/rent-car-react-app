@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../images/user.jpg";
+import image from "../../images/user.jpg";
 
 const VehicleDetail = (props) => {
   const { brand, model } = props.location.state.vehicle;
@@ -16,7 +16,7 @@ const VehicleDetail = (props) => {
         </div>
       </div>
       <div className="center-div">
-        <Link to="/">
+        <Link to="/vehicles">
           <button className="ui button blue center">
             Back to vehicles list
           </button>
