@@ -27,7 +27,7 @@ class EditContact extends React.Component {
         <h2>Edit Contact</h2>
         <form className="ui form" onSubmit={this.update}>
           <div className="field">
-            <label>Name</label>
+            <label>Full name</label>
             <input
               type="text"
               name="name"
@@ -39,11 +39,21 @@ class EditContact extends React.Component {
           <div className="field">
             <label>Email</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Email"
               value={this.state.email}
               onChange={(e) => this.setState({ email: e.target.value })}
+            />
+          </div>
+          <div className="field">
+            <label>Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              value={this.state.phone}
+              onChange={(e) => this.setState({ phone: e.target.value })}
             />
           </div>
           <button className="ui button blue">Update</button>

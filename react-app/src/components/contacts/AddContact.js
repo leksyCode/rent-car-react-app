@@ -4,16 +4,17 @@ class AddContact extends React.Component {
   state = {
     name: "",
     email: "",
+    phone: ""
   };
 
   add = (e) => {
     e.preventDefault();
-    if (this.state.name === "" || this.state.email === "") {
-      alert("ALl the fields are mandatory!");
+    if (this.state.name === "" || this.state.email === "" || this.state.phone === "") {
+      alert("All the fields are mandatory!");
       return;
     }
     this.props.addContactHandler(this.state);
-    this.setState({ name: "", email: "" });
+    this.setState({ name: "", email: "", phone: "" });
     this.props.history.push("/contacts");
   };
   render() {
@@ -22,7 +23,7 @@ class AddContact extends React.Component {
         <h2>Add Contact</h2>
         <form className="ui form" onSubmit={this.add}>
           <div className="field">
-            <label>Name</label>
+            <label>Full name</label>
             <input
               type="text"
               name="name"
@@ -34,11 +35,21 @@ class AddContact extends React.Component {
           <div className="field">
             <label>Email</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Email"
               value={this.state.email}
               onChange={(e) => this.setState({ email: e.target.value })}
+            />
+          </div>
+          <div className="field">
+            <label>Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              value={this.state.phone}
+              onChange={(e) => this.setState({ phone: e.target.value })}
             />
           </div>
           <button className="ui button blue">Add</button>

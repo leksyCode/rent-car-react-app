@@ -21,6 +21,7 @@ const ContactList = (props) => {
 
   return (
     <div className="main">
+       <br/>
       <h2>
         Contact List
         <Link to="/contacts/add">

@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import user from "../../images/user.png";
 
 const ContactCard = (props) => {
-  const { id, name, email } = props.contact;
+  const { id, name, email, phone} = props.contact;
   return (
     <div className="item">
-      <img className="ui avatar image" src={user} alt="user" />
+      <img className="ui avatar image" src={`${process.env.PUBLIC_URL}/images/user.jpg`} alt="user" />
       <div className="content">
         <Link
           to={{ pathname: `/contacts/${id}`, state: { contact: props.contact } }}
         >
           <div className="header">{name}</div>
           <div>{email}</div>
+          <div>{phone}</div>
         </Link>
       </div>
       <i

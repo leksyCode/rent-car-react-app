@@ -9,7 +9,15 @@ const VehicleList = (props) => {
     props.getVehicleId(id);
   };
 
-  const renderVehicleList = props.vehicles.map((vehicle) => {
+  let vehicleCount = 0;
+
+  props.vehicles.forEach(element => {
+    if(parseInt(element.count)) {
+      vehicleCount += parseInt(element.count);
+    }
+  });
+
+  const renderVehicleList =  props.vehicles.map((vehicle) => {
     return (
       <VehicleCard
         vehicle={vehicle}
@@ -21,13 +29,13 @@ const VehicleList = (props) => {
 
   return (
     <div className="main">
+      <br/>
       <h2>
-        Сars
+       Left in stock: {vehicleCount} cars 
         <Link to="/vehicles/add">
           <button className="ui button blue right">Add Vehicle</button>
         </Link>
-      </h2>
-      <h5> Left in stock: {props.vehicles.length}</h5>
+      </h2>    
       <div className="ui celled list">{renderVehicleList}</div>
     </div>
   );

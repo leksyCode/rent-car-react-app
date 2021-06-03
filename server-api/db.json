@@ -3,34 +3,64 @@
     {
       "id": "728a7c47-7cdc-4c6f-a1e1-6e142de883bc",
       "brand": "Lamborghini",
-      "model": "Urus"
+      "model": "Urus",
+      "constructionYear": "2021",
+      "vehicleType": "luxury",
+      "fuelType": "diesel",
+      "picture": "urus.jpg",
+      "numberOfSeats": 5,
+      "pricePerDay": 565,
+      "count": "2"
+    },
+    {
+      "id": "3effe62f-8bdc-4db5-9006-a01d589bf7ce",
+      "brand": "Audi ",
+      "model": "RS Q8",
+      "constructionYear": "2020",
+      "vehicleType": "luxury",
+      "fuelType": "petrol",
+      "picture": "audiQrs.jpg",
+      "numberOfSeats": "5",
+      "pricePerDay": 560,
+      "count": "4"
     },
     {
       "id": "ab39af94-2b7a-4f90-81ae-3d0d10da87ce",
       "brand": "BMW",
-      "model": "5 series 530i"
-    },
+      "model": "5 series e60 530i",
+      "constructionYear": "2007",
+      "vehicleType": "luxury",
+      "fuelType": "diesel",
+      "picture": "bmwE60.jpg",
+      "numberOfSeats": 5,
+      "pricePerDay": 120,
+      "count": "8"
+    },  
     {
       "id": "f9797a98-0c62-47ce-8b79-ab60dc337f8e",
-      "brand": "WW",
-      "model": "Passat 2006 year"
-    },
-    {
-      "id": "c2f74d52-8c5c-4dab-ba42-537bb643730f",
-      "brand": "Audi ",
-      "model": "QS"
+      "brand": "WolksWagen",
+      "model": "Passat ",
+      "constructionYear": "2009",
+      "vehicleType": "estate",
+      "fuelType": "diesel",
+      "picture": "passat.jpg",
+      "numberOfSeats": 5,
+      "pricePerDay": 99,
+      "count": "13"
     }
   ],
   "contacts": [
     {
       "id": "00000000-7cdc-4b6f-a2e1-6e142de883bc",
       "name": "AdminAdmin",
-      "email": "admin@good.com"
+      "email": "admin@good.com",
+      "phone": "+359654654645"
     },
     {
       "id": "b36dcf06-55a1-4129-a3eb-992b45b6a9f5",
       "name": "Boss23",
-      "email": "boss@gmail.com"
+      "email": "boss@gmail.com",
+      "phone": "+35906978567"
     }
   ]
 }

@@ -1,18 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../../images/user.png";
 
 const VehicleCard = (props) => {
-  const { id, brand, model } = props.vehicle;
+  const { id, brand, model, constructionYear, vehicleType, fuelType, numberOfSeats, picture, pricePerDay, count} = props.vehicle;
+  const imageUrl = `${process.env.PUBLIC_URL}/images/` + picture;
   return (
     <div className="item">
-      <img className="ui avatar image" src={image} alt="car" />
-      <div className="content">
-        <Link
-          to={{ pathname: `/vehicle/${id}`, state: { vehicle: props.vehicle } }}
-        >
-          <div className="header">{brand}</div>
-          <div>{model}</div>
+
+      <h2 className="header left">{brand} {model} </h2>
+      <img className="ui car image" src={imageUrl} alt="car"/>     
+
+      <div className="content">     
+        <Link to={{ pathname: `/vehicle/${id}`, state: { vehicle: props.vehicle } }}>                 
+        <h3 className="description">Price: {pricePerDay}$ / day</h3> 
+                <div className="description"><h4>year: {constructionYear}</h4></div>
+                <div className="description"><h4>type: {vehicleType}</h4></div>
+                <div className="description"><h4>engine: {fuelType}</h4></div>
+                <div className="description"><h4>seats: {numberOfSeats}</h4></div>
+                <div className="description"><h4>available: {count} cars</h4></div>    
         </Link>
       </div>
       <i

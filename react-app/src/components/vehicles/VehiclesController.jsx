@@ -31,7 +31,7 @@ function VehiclesController() {
 
   const updateVehicleHandler = async (vehicle) => {
     const response = await api.put(`${vehicle.id}`, vehicle);
-    const { id, brand, model } = response.data;
+    const { id } = response.data;
     setVehicles(
       vehicles.map((vehicle) => {
         return vehicle.id === id ? { ...response.data } : vehicle;

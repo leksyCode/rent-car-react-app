@@ -1,3 +1,9 @@
+.ui.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(233, 233, 241);
+}
+
 .main {
   margin-top: 5em;
 }
@@ -14,6 +20,25 @@
 
 .item {
   padding: 15px 0px !important;
+}
+
+.ui.car.image {  
+  height: auto;
+  width: 40%;
+}
+
+.ui.avatar.image {
+  width: 100px;
+  height: 100px;
+}
+
+.ui.card.centered {
+  width: 80%;
+  height: auto;
+}
+
+.image {
+  width: 100%;
 }
 
 i.icon {
