@@ -35,7 +35,7 @@
       "numberOfSeats": 5,
       "pricePerDay": 120,
       "count": "8"
-    },  
+    },
     {
       "id": "f9797a98-0c62-47ce-8b79-ab60dc337f8e",
       "brand": "WolksWagen",
@@ -61,6 +61,18 @@
       "name": "Boss23",
       "email": "boss@gmail.com",
       "phone": "+35906978567"
+    }
+  ],
+  "orders": [
+    {
+      "id": "9983d9ed-86c2-4dbf-9d2d-14879257bf43",
+      "startDate": "2021-06-20",
+      "endDate": "2021-06-30"
+    },
+    {
+      "id": "fccca76c-c01b-4e29-8c67-4f1648b68728",
+      "startDate": "2021-07-02",
+      "endDate": "2021-06-19"
     }
   ]
 }

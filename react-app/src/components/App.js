@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./Header";
 import ContactsController from "./contacts/ContactsController"
 import VehiclesController from "./vehicles/VehiclesController";
+import OrdersController from "./orders/OrdersController";
+import AddOrder from "./orders/AddOrder";
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Switch>
           <Route path="/contacts" component={ContactsController} />
           <Route path="/vehicles" component={VehiclesController} />
+          <Route path="/orders" component={OrdersController} />  
+          <Route path="/orders/add/:vehicleId" children={<AddOrder/>} />
         </Switch>
       </Router>
     </div>

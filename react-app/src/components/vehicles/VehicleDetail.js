@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const VehicleDetail = (props) => {
-  const { brand, model, constructionYear, vehicleType, fuelType, pricePerDay, numberOfSeats, count, picture} = props.location.state.vehicle;
+  const { id, brand, model, constructionYear, vehicleType, fuelType, pricePerDay, numberOfSeats, count, picture} = props.location.state.vehicle;
   const imageUrl = `${process.env.PUBLIC_URL}/images/` + picture;
   return (
     <div className="main">
@@ -24,14 +24,14 @@ const VehicleDetail = (props) => {
             Back to vehicles list
           </button>
         </Link> 
-      <Link to="/order">
+        <Link to= {{pathname : "/orders/add", state: { vehicleId: id }}}>
           <button className="ui button yellow left">
             Order
           </button>
         </Link>
+     
         </div>      
       </div>
-     
     </div>
   );
 };
